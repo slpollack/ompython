@@ -9,7 +9,7 @@
 			
 		{% if businesses %}
 			<h1> Here are some restaurants to try:
-			{% for biz in businesses %}
+			{% for biz in businesses[:3] %}
 				<li>{{ biz["bizname"] }}
 				
 			{% endfor %}
